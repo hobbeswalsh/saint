@@ -12,6 +12,11 @@ def serve_index():
     return render_template("index.html")
 
 
+@app.route("/1")
+def serve_index1():
+    return render_template("index2.html")
+
+
 def main():
     port = os.environ.get("PORT", 5555)
     app.run(port=port)
